@@ -1,0 +1,20 @@
+<% include header.html %>
+
+<div class="container-fluid">
+    <form class="form-horizontal" ng-controller="LoginCtrl">
+        <fieldset>
+            <legend>用户登陆</legend>
+            <div class="container">
+                <label class="control-label" for="username">用户名</label>
+                <input type="text" class="input-xlarge" id="username" name="username" ng-model="user.username">
+                <br/><br/>
+                <label class="control-label" for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                <input type="password" class="input-xlarge" id="password" name="password" ng-model="user.password">
+                <br/><br/>
+                <button type="submit" class="btn btn-primary" ng-click="checkAuth()">登 陆</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<% include footer.html %>
